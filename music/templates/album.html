@@ -1,0 +1,12 @@
+<h1>{{album.name}}</h1>
+
+<p>Date Released: {{album.publish_date}}</p>
+
+<h2>Songs:</h2>
+{% for song in songs  %}
+<li>
+  <a href="/song/{{ song.id }}">{{ song.name }}</a>
+</li>
+{% endfor %}
+
+</div>

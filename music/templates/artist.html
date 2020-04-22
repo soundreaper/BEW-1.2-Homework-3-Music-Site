@@ -1,0 +1,12 @@
+<h1>{{musician.name}}</h1>
+
+<h3>Bio:</h3>
+<p>{{musician.bio}}</p>
+
+<h2 style="margin-top: 50px;">Albums:</h2>
+{% for album in albums  %}
+<li>
+  <a href="/album/{{ album.id }}">{{ album.name }}</a>
+</li>
+{% endfor %}
+</div>
